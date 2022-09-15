@@ -12,7 +12,7 @@ body {
 }
 
 
-/* style for nav *************************************************************************/
+/* style for nav ***************/
 
 header {
     background-color: white;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    /* color: black; */
     transition: .4s ease;
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
@@ -72,9 +72,9 @@ nav .logo:hover {
 
 }
 
-/* end style for nav ********* **************************************************************/
+/* end style for nav ********* ******************/
 
-/* instagram icon   *********************************************************************** */
+/* instagram icon****************** */
 .social {
     text-align: center;
     margin-top: 40px;
@@ -86,7 +86,7 @@ nav .logo:hover {
     font-size: 40px;
 }
 
-/* end of instagram icon ******************************************************************* */
+/* end of instagram icon ****************** */
 
 
 
@@ -104,15 +104,15 @@ nav .logo:hover {
 
 
 h2 {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 300px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 7em;
-    text-shadow: 2px 2px black;
+    text-shadow: 3px 3px black;
     font-family: 'Dosis', sans-serif;
     letter-spacing: 20px;
-    background-color: rgba(255, 255, 255, 0.462);
+    background-color: rgba(255, 255, 255, 0.363);
     border-radius: 20px;
 }
 
