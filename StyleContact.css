@@ -49,9 +49,6 @@ nav a:hover {
 
 }
 
-nav .logo:hover {
-    text-decoration: none;
-}
 
 .logo {
     /*  position: absolute;
@@ -68,6 +65,7 @@ nav .logo:hover {
     color: rgb(0, 0, 0);
     font-size: 40px;
     letter-spacing: 8px;
+    margin-left: 4%;
     /* padding-left: 30px; */
 
 }
@@ -106,7 +104,7 @@ nav .logo:hover {
     color: #ffffff;
     padding-top: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 /* end of arrow ******* */
@@ -143,7 +141,7 @@ h1 {
 
 .email a:hover {
     background-color: rgb(255, 255, 255, 0.792);
-    transition: 0.5s;
+    transition: 0.3s;
     color: rgb(1, 1, 1);
 }
 .container {

@@ -49,9 +49,6 @@ nav a:hover {
 
 }
 
-nav .logo:hover {
-    text-decoration: none;
-}
 
 .logo {
     /*  position: absolute;
@@ -68,6 +65,7 @@ nav .logo:hover {
     color: rgb(0, 0, 0);
     font-size: 40px;
     letter-spacing: 8px;
+    margin-left: 4%;
     /* padding-left: 30px; */
 
 }
@@ -151,13 +149,6 @@ article {
 /* end product photos */
 
 /* description and price **************************************** */
-/* .description {
-    
-    margin: 0;
-    width: auto;
-    text-align: center;
-} */
-
 
 
 .carousel {
