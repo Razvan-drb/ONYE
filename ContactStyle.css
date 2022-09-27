@@ -9,10 +9,11 @@ img {
 body {
     margin: 0;
     padding: 0;
+    background-color: #e5e1de;
 }
 
 
-/* style for nav *************************************************************************/
+/* style for nav ***************/
 
 header {
     background-color: white;
@@ -25,7 +26,12 @@ header {
 }
 
 nav {
-    margin: auto;
+    margin: 0 auto;
+}
+nav:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 
@@ -70,25 +76,58 @@ nav a:hover {
 
 }
 
-/* end style for nav ********* **************************************************************/
 
-/* instagram icon   *********************************************************************** */
-.social {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+/* end style for nav ********* ******************/
+
+
+/* style for col-6 img ...half *********************** */
+
+
+#rangee .col-6 {
+    height: 100vh;
 }
 
-.social i {
-    color: white;
-    font-size: 40px;
+#bgImg {
+    /* display: flex;
+    flex-direction: row;
+    width: auto; */
+    height: 700px;
+    background-image: url(img/5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 }
 
-/* end of instagram icon ******************************************************************* */
+/* .col-6 img {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+
+} */
+/* .half {
+    height: 30%;
+} */
+#contact {
+    /* background-color: #cdd0d3; */
+    background: linear-gradient(90deg, #1d2629 0%, #2e393d 28%, #abb5be 100%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* end of style img col-6 ...half *********************** */
 
 
 
-#bgcVideo {
+
+
+
+/* #bgcVideo {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -98,81 +137,77 @@ nav a:hover {
     top: 0;
     bottom: 0;
     z-index: -1;
+} */
+
+/* arrow********** */
+.arrow {
+    color: #ffffff;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
 }
 
+/* end of arrow ******* */
 
-h2 {
-    margin-top: 200px;
-    margin-bottom: 300px;
+h1 {
+    margin-top: 100px;
+    padding: 30px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 7em;
-    text-shadow: 2px 2px black;
+    font-size: 1.9em;
+    /* text-shadow: 2px 2px black; */
     font-family: 'Dosis', sans-serif;
-    letter-spacing: 20px;
-    background-color: rgba(255, 255, 255, 0.462);
+    letter-spacing: 0.5px;
+    background-color: #cdd0d3;
+    background: linear-gradient(90deg, #1d2629 0%, #2e393d 28%, #abb5be 100%);
+}
+
+.email {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.email a {
+    font-family: 'Dosis', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px;
     border-radius: 20px;
 }
 
-.containerH2 {
-    width: 70%;
-    margin: auto auto 30% auto;
-}
-
-
-
-/* product photos */
-.col-4 img {
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    height: auto;
-    border-radius: 20px;
-    margin: auto auto 10% auto;
-    position: relative;
-
-}
-
-article {
-    position: relative;
+.email a:hover {
+    background-color:#82888d;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
 }
 
 .container {
     margin: auto;
-    width: 95%;
-    /*  margin: auto; */
-    background-color: white;
-    border-radius: 20px;
 }
 
-
-/* end product photos */
-
-/* description and price **************************************** */
-
-
-.carousel {
-    position: relative;
-    background-color: white;
-}
-
-.priceTag {
-    position: absolute;
-    bottom: 88%;
-    left: 37%;
-    background-color: rgba(255, 255, 255, 0.77);
-    padding: 7px 15px 7px 15px;
-    border-radius: 10px;
-    font-size: 25px;
-}
-
-.carousel p {
+/* instagram icon****************** */
+.social {
     text-align: center;
-    margin: 0;
-    width: auto;
+    margin-bottom: 100px;
+    padding-top: 50px;
 }
 
-/* end of description and price ******************************** */
+.social i {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.social:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+
+/* end of instagram icon ****************** */
+
 
 
 
@@ -181,7 +216,7 @@ article {
 
 /*  ROWS and COLUMNS *************************************** */
 
-.row {
+/* .row {
     display: flex;
     flex-flow: row wrap;
 }
@@ -213,7 +248,6 @@ article {
 
 .col-6 {
     width: 50%;
-    padding: 25px;
 }
 
 .col-7 {
@@ -244,4 +278,4 @@ article {
 .col-12 {
     width: 100%;
     padding: 25px;
-}
+} */

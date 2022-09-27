@@ -26,9 +26,11 @@
     <!-- boostrap icons link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- css link -->
-    <link rel="stylesheet" href="StyleContact.css">
+    <link rel="stylesheet" href="ContactStyle.css">
 
 </head>
 
@@ -42,7 +44,7 @@
             <a href="index.html">Home</a>
             <a href="index.html#products">Products</a>
             <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="about.html">About</a>
             <a href="#">...</a>
         </nav>
     </header>
@@ -53,39 +55,55 @@
     <!-- end of header    *************************** -->
 
     <!-- bgc video """""""""""""""""" -->
-    <video autoplay muted loop id="bgcVideo">
+    <!-- <video autoplay muted loop id="bgcVideo">
         <source src="video/bgcVideo.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-    </video>
+    </video> -->
     <!-- main ******************************************************* -->
 
 
 
 
-    <main class="container">
+    <main class="container-fluid">
 
-        <h1>We are happy to answer any questions you might have about our products<br> <br> just press the button below
-        </h1>
+        <section class="row" id="rangee">
 
-        <div class="arrow">
-            <i class="bi bi-arrow-down"></i>
-        </div>
+            <div class="col-6 col-lg-6" id="bgImg">
+            
+            
+            
+            </div>
 
-        <div class="email">
 
-            <a href="mailto: office@onye.com">Send Email</a>
-        </div>
+            <div class="col-6 col-lg-6" id="contact">
+                <h1>We are happy to answer any questions you might have about our products<br> <br> just press the button below
+                </h1>
+                <div class="arrow">
+                    <i class="bi bi-arrow-down"></i>
+                </div>
+                <div class="email">
+                
+                    <a href="mailto: office@onye.com">Send Email</a>
+                </div>
+                <div class="social">
+                    <a href="https://instagram.com/onye____?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+                
+
+
+            </div>
+            
+
+
+        </section>
     
 
 
     </main>
     <!-- enf of main ********************************** -->
 
-    <footer>
-        <div class="social">
-            <a href="https://instagram.com/onye____?igshid=YmMyMTA2M2Y=" target="_blank"><i
-                    class="bi bi-instagram"></i></a>
-        </div>
+    <footer class="container-fluid">
+        
     </footer>
 
 
