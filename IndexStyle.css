@@ -21,15 +21,22 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
 }
 
 nav {
     margin: auto;
+
+
 }
+
 nav:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
+    /* transform: scale(1.03); */
+    /*  transition: 0.5s; */
     cursor: pointer;
 }
 
@@ -38,17 +45,17 @@ nav a {
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
     letter-spacing: 4px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 0px;
-    margin: 40px;
+    margin: 20px;
     color: rgb(0, 0, 0);
     position: relative;
 }
 
 nav a:hover {
     color: black;
-    transition: .4s ease;
+    /* transition: .4s ease; */
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
 
@@ -72,6 +79,7 @@ nav a:hover {
     letter-spacing: 8px;
     margin-left: 4%;
     /* padding-left: 30px; */
+    width: 150px;
 
 }
 
@@ -95,21 +103,48 @@ nav a:hover {
 
 
 h2 {
-    margin-top: 200px;
-    margin-bottom: 300px;
+    margin-top: 150px;
+    margin-bottom: 100px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 7em;
-    text-shadow: 2px 2px black;
+    text-shadow: 3px 3px rgb(0, 0, 0);
     font-family: 'Dosis', sans-serif;
     letter-spacing: 20px;
     background-color: rgba(255, 255, 255, 0.462);
     border-radius: 20px;
+    padding: 20px;
+    cursor: default;
+}
+h4 {
+    margin-top: 150px;
+        margin-bottom: 100px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 3em;
+        text-shadow: 3px 3px rgb(0, 0, 0);
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 20px;
+        background-color: rgba(255, 255, 255, 0.462);
+        border-radius: 20px;
+        padding: 20px;
+        cursor: default;
 }
 
 .containerH2 {
     width: 70%;
     margin: auto auto 30% auto;
+}
+
+.arrow {
+    text-align: center;
+}
+
+.arrow i {
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 1px black;
+    ;
 }
 
 
@@ -123,11 +158,12 @@ h2 {
     border-radius: 20px;
     margin: auto auto 10% auto;
     position: relative;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.col-4 img:hover {
+.carousel-item img:hover {
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 article {
@@ -135,11 +171,14 @@ article {
 }
 
 .container {
-    margin: auto;
-    width: 95%;
-    /*  margin: auto; */
-    background-color: white;
+    margin: 10rem auto;
+    /* margin-top: 10rem; */
+    width: 85%;
+     /* margin: auto; */
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
+
+
 }
 
 
@@ -150,7 +189,8 @@ article {
 
 .carousel {
     position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
+
 }
 
 .priceTag {
@@ -184,17 +224,26 @@ article {
     color: white;
     font-size: 40px;
 }
+
 .social:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
 
-footer p {
+footer a,
+p {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: white;
+    margin-bottom: 30px;
 }
+
+footer a:hover {
+    font-size: 18px;
+}
+
 
 /* end of instagram icon ******************************************************************* */
 
@@ -262,7 +311,159 @@ footer p {
     padding: 25px;
 }
 
-.col-12 {
-    width: 100%;
-    padding: 25px;
+/* cookie banner ************************************ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #f5f8ff;
+}
+
+#cookiePopup {
+    background-color: #ffffffdc;
+    position: absolute;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+}
+
+#cookiePopup img {
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+}
+
+#cookiePopup p {
+    text-align: center;
+    margin: 1.4em 0;
+    color: #000;
+}
+
+#cookiePopup button {
+    background-color: #c78a57;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 0.6em 1.2em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#cookiePopup a {
+    color: #6859fe;
+}
+
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+
+
+
+/* end of cookie banner ********************************** */
+
+@media screen and (max-width: 991px) {
+
+    h2 {
+        font-size: 4em;
+    }
+
+    .col-12 {
+        width: 100%;
+        padding: 25px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        letter-spacing: 2px;
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .cart {
+        font-size: 10px;
+    }
+    .cart img {
+        min-width: 100px;
+
+    }
+
+    /* cookie */
+    #cookiePopup {
+        width: 100%;
+    }
+
+    .hide {
+        bottom: 2em;
+        right: 0;
+    }
+
+    .show {
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* Ç****************************** style for form **************************** */
+
+.row {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+#signInBgc {
+    background-color: #ffffffc4;
+}
+
+.btn-sub {
+    background-color: #23464c;
+    color: white;
+}
+
+.btn-sub:hover {
+    background-color: #537d85 !important;
+    color: white !important;
+}
+
+
+/* **************** end of form style *************** */
+
+
+/* ************ add form products *********** *******************/
+
+
+
+.card {
+    background-color: #23464cba;
+}
+.cardSpace {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+/* *******************end of add form products****************** */

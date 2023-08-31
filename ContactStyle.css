@@ -28,9 +28,10 @@ header {
 nav {
     margin: 0 auto;
 }
+
 nav:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
+  /*   transform: scale(1.03);
+    transition: 0.5s; */
     cursor: pointer;
 }
 
@@ -49,7 +50,7 @@ nav a {
 
 nav a:hover {
     color: black;
-    transition: .4s ease;
+    /* transition: .4s ease; */
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
 
@@ -58,14 +59,14 @@ nav a:hover {
 
 .logo {
     /*  position: absolute;
-    left: 10px;
-    top: 15px; */
+        left: 10px;
+        top: 15px; */
     /* display: flex;
-    flex-direction:row; */
+        flex-direction:row; */
     /*  float: left; */
     /*  margin-top: 0 auto;
-    display: flex;
-    flex-direction: column-reverse; */
+        display: flex;
+        flex-direction: column-reverse; */
     /* font-family: 'Rubik Moonrocks', cursive; */
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(0, 0, 0);
@@ -73,6 +74,7 @@ nav a:hover {
     letter-spacing: 8px;
     margin-left: 4%;
     /* padding-left: 30px; */
+    width: 150px;
 
 }
 
@@ -180,7 +182,7 @@ h1 {
 }
 
 .email a:hover {
-    background-color:#82888d;
+    background-color: #82888d;
     transition: 0.3s;
     color: rgb(255, 255, 255);
 }
@@ -200,6 +202,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 40px;
 }
+
 .social:hover {
     transform: scale(1.3);
     transition: 0.5s;
@@ -279,3 +282,33 @@ h1 {
     width: 100%;
     padding: 25px;
 } */
+
+@media screen and (max-width: 991px) {
+
+    h2 {
+        font-size: 4em;
+    }
+
+    .col-12 {
+        width: 100%;
+        padding: 25px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    nav a:last-of-type {
+        display: none;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+}

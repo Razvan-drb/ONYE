@@ -7,10 +7,8 @@ img {
 }
 
 body {
-    background-color: rgb(247, 239, 239);
     margin: 0;
     padding: 0;
-    margin-bottom: 10%;
 }
 
 
@@ -23,37 +21,41 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 
 }
 
 nav {
     margin: auto;
+
+
 }
 
 nav:hover {
-    transform: scale(1.03);
-    transition: 0.5s;
+    /* transform: scale(1.03); */
+    /*  transition: 0.5s; */
     cursor: pointer;
 }
-
 
 
 nav a {
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: none;
     letter-spacing: 4px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 0px;
-    margin: 40px;
+    margin: 20px;
     color: rgb(0, 0, 0);
     position: relative;
-
 }
 
 nav a:hover {
     color: black;
-    transition: .4s ease;
+    /* transition: .4s ease; */
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
 
@@ -77,10 +79,34 @@ nav a:hover {
     letter-spacing: 8px;
     margin-left: 4%;
     /* padding-left: 30px; */
+    width: 150px;
 
 }
 
 /* end style for nav ********* **************************************************************/
+
+
+
+
+
+#bgcVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
 
 
 /* parallax ********************** */
@@ -94,13 +120,16 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
+
 }
 
 .slide1 {
     background-image: url(img/3cropped.jpeg);
     /* Full height */
     height: 800px;
-    width: 100%;
+    width: 55%;
+    margin: 0 auto;
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
@@ -108,6 +137,7 @@ nav a:hover {
     text-align: center;
     /* making slide1 into parallax */
     background-attachment: fixed;
+    border-radius: 10px;
 
     /* display: flex;
     flex-direction: row; */
@@ -117,7 +147,8 @@ nav a:hover {
     background-image: url(img/2cropped.jpeg);
     /* Full height */
     height: 800px;
-    width: 100%;
+    width: 55%;
+    margin: 0 auto;
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
@@ -126,13 +157,15 @@ nav a:hover {
     /* making slide into parallax */
     background-attachment: fixed;
     display: flex;
+    border-radius: 10px;
 }
 
 .slide3 {
     background-image: url(img/7cropped.jpeg);
     /* Full height */
     height: 500px;
-    width: 100%;
+    width: 55%;
+    margin: 0 auto;
     /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
@@ -141,59 +174,66 @@ nav a:hover {
     /* making slide into parallax */
     background-attachment: fixed;
     display: flex;
+    border-radius: 10px;
 }
 
 /* end of parallax ******************* */
 
-.container {
-    width: 70%;
-    margin: auto;
-}
-
 .text {
+    margin: 20px auto;
     padding: 20px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
+    color: #f7eeef;
+    background-color: #345646a6;
+    border-radius: 10px;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-weight: 800;
+    width: 70%;
+
 }
 
-.text:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-    cursor: pointer;
+
+
+article {
+    position: relative;
 }
 
-/* footer style ******************************************************* */
+.container {
+    margin: 10rem auto;
+    /* margin-top: 10rem; */
+    width: 55%;
+    /* margin: auto; */
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 20px;
 
 
-/* end footer style  *************************************************/
+}
 
-/* instagram icon   *********************************************************************** */
-.social {
+
+
+
+/* footer *************************************** */
+
+
+footer a,
+p {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 0;
+    color: white;
+    margin-bottom: 30px;
 }
 
-.social i {
-    color: rgb(0, 0, 0);
-    font-size: 40px;
+footer a:hover {
+    font-size: 18px;
 }
 
-.social:hover {
-    transform: scale(1.3);
-    transition: 0.5s;
-}
 
 /* end of instagram icon ******************************************************************* */
 
-footer p {
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-}
-
-
+/* end of footer ********************************** */
 
 /*  ROWS and COLUMNS *************************************** */
 
@@ -257,7 +297,63 @@ footer p {
     padding: 25px;
 }
 
-.col-12 {
-    width: 100%;
-    padding: 25px;
+/* cookie banner ************************************ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f8ff;
+}
+
+
+
+
+
+.hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+
+.show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+
+
+
+/* end of cookie banner ********************************** */
+
+@media screen and (max-width: 991px) {
+
+    h2 {
+        font-size: 4em;
+    }
+
+    .col-12 {
+        width: 100%;
+        padding: 25px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+
+    .container {
+        width: 55%;
+    }
+
 }
